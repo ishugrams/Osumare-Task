@@ -17,7 +17,7 @@ button {
 }
 
 .container {
-    margin: 0 80px;
+    margin: 0 800px;
     /* position: relative; */
 }
 
@@ -35,6 +35,10 @@ button {
     width: 100%;
     top: 0;
     left: 0;
+}
+
+.main-section section {
+    margin-top: 100px;
 }
 
 .container .contact-btn button {
@@ -314,6 +318,25 @@ button {
     gap: 80px;
 }
 
+/* Add this CSS to your existing styles */
+.call-optimize {
+    display: inline-block;
+    width: 48%;
+    /* Adjust as needed */
+    vertical-align: top;
+    /* Align the top edges of the inline blocks */
+    margin-right: 2%;
+    /* Adjust the margin between the blocks */
+}
+
+/* Clearfix to prevent container collapse due to floated elements */
+.container::after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+
 .optimized-content {
     width: 50%;
 }
@@ -363,6 +386,10 @@ button {
 .call-optimize {
     flex-direction: column;
     width: 50%;
+}
+
+.section-6 section {
+    display: flex;
 }
 
 .call-optimize .call-opti-img {
@@ -557,6 +584,8 @@ textarea {
     border-radius: 4px;
     margin-bottom: 16px;
 }
+
+
 
 button#submitBtn {
     padding: 16.5px 64px;
